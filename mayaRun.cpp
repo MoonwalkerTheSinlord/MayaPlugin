@@ -130,7 +130,7 @@ void infoSending(float lastTime)
 	}
 	if (light_Changed)
 	{
-		// Loops through all lights that were changed.
+		// Loops through all lights that were changed:
 		for (int i = 0; i < lightVec.size(); i++)
 		{
 			sendLightInfo->role = lightInfoVec.at(i).role;
@@ -156,7 +156,7 @@ void infoSending(float lastTime)
 	}
 	if (transformVec.size() > 0)
 	{
-		// Loops through all transforms that were changed.
+		// Loops through all transforms that were changed:
 		for (int i = 0; i < transformVec.size(); i++)
 		{
 			sendTransformInfo->role = transformInfoVec.at(i).role;
@@ -180,7 +180,7 @@ void infoSending(float lastTime)
 
 	if (delete_Changed)
 	{
-		// Loops through all delete messages that were changed.
+		// Loops through all delete messages that were changed:
 		for (int i = 0; i < deleteVec.size(); i++)
 		{
 			sendDeleteInfo->role = deleteInfoVec.at(i).role;
